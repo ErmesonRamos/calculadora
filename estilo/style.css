@@ -1,0 +1,113 @@
+/*
+    1. Cores do Container (Fundo Principal)
+        Modo Claro:
+            Cor de fundo: #F5F5F5 (cinza claro) ou #FFFFFF (branco)
+            Borda: #D3D3D3 (cinza suave)
+    2. Cores da Tela de Exibição (Display)
+        Modo Claro:
+            Cor de fundo do display: #1C1C1C (cinza escuro ou preto suave)
+            Cor do texto: #FFFFFF (branco) ou #00FF00 (verde fluorescente, para um visual mais futurista)
+    3. Cores dos Botões (Buttons)
+        Botões Numéricos (0-9):
+        Cor de fundo: #4CAF50 (verde) ou #2196F3 (azul) para um visual agradável
+        Cor do texto: #FFFFFF (branco)
+        *Botões de Operações (+, -, , /):
+
+        Cor de fundo: #FF9800 (laranja) ou #FF5722 (vermelho alaranjado)
+        Cor do texto: #FFFFFF (branco)
+        Botão de Igual (=):
+
+        Cor de fundo: #4CAF50 (verde) ou #008C00 (verde escuro)
+        Cor do texto: #FFFFFF (branco)
+        Botão de Limpar (C):
+
+        Cor de fundo: #F44336 (vermelho) ou #E91E63 (rosa escuro)
+        Cor do texto: #FFFFFF (branco)
+        Botões de Funções Especiais (como "±", "%"):
+
+        Cor de fundo: #9E9E9E (cinza) ou #8BC34A (verde claro)
+        Cor do texto: #FFFFFF (branco)
+        4. Interatividade (Hover, Ativo, etc.)
+        Hover (quando o mouse passa sobre o botão):
+        Cor de fundo: Escurecer a cor de fundo dos botões em 10-20%. Por exemplo, se o botão for verde, a cor de hover pode ser #388E3C.
+        Botão Ativo (quando pressionado):
+        Cor de fundo: Mais escuro do que o estado normal. Exemplo: #2E7D32 para um botão verde.
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 300px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #F5F5F5;
+    border: 1px solid #D3D3D3;
+}
+
+.display {
+    width: 280px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+.buttons {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+button {
+    font-size: 24px;
+    width: 90px;
+    height: 30px;
+}
+
+.numeros {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.operadores {
+    background-color: #FF9800;
+    color: white;
+}
+
+.igual {
+    width: 280px;
+    height: 80px;
+    background-color: #4CAF50 ;
+    color: white;
+}
+
+.limpar {
+    background-color: #F44336;
+    color: white;
+}
+
+.ponto {
+    background-color: #E91E63;
+    color: white;
+}
